@@ -1,9 +1,8 @@
 {
   "store.home": { 
     "blocks": [
-      "tab-layout",
-      "slider-layout",
-      "flex-layout.row#home"
+      "tab-layout"
+      
     ]
   },
 
@@ -16,17 +15,24 @@
   
   "tab-list": {
    "children": [
+     "tab-list.item#home",
     "tab-list.item#1",
     "tab-list.item#2",
    "tab-list.item#3"
     ]
   },
-  
+
+  "tab-list.item#home": {
+    "props": {
+      "tabId": "home",
+      "label": "home",
+     "defaultActiveTab": true
+    }
+  },
   "tab-list.item#1": {
     "props": {
       "tabId": "soluções",
-      "label": "Soluções",
-     "defaultActiveTab": true
+      "label": "Soluções"
     }
   },
   
@@ -43,7 +49,45 @@
      "label": "Leads"
     }
   },
+  "tab-content": {
+    "props":{"textAligment":"CENTER"},
+    "children":[ 
+      "tab-content.item#home",
+      "tab-content.item#solucoes",
+      "tab-content.item#sobre",
+      "tab-content.item#leads"
+    ]
+  },
+  "tab-content.item#home":{
+    "children":[ 
+      "slider-layout",
+      "flex-layout.row#home" 
+    ],
+    "props":{"tabId":"home"}
+  },
+  "tab-content.item#solucoes": {
+    "children":[ "search-result-layout.customQuery#1" ],
+    "props":{"tabId":"soluções"}
+  },
   
+  "tab-content.item#sobre":{
+    "children":[ "rich-text#sobre" ],
+    "props":{"tabId":"sobre"} 
+  },
+  "rich-text#sobre": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "SOBRE",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+    }
+  },
+  "tab-content.item#leads": {
+    "children":[ "leadsList" ],
+    "props":{"tabId":"leads"}
+  },
   "slider-layout": {
    "children": [
      "info-card#1", 
@@ -225,8 +269,6 @@
     "props":{
       "horizontalAlign": "center"
     },
-    "children":["rich-text#2", "countdown"]
+    "children":["rich-text#2", "leadsForm"]
   }
  }
-  
-  

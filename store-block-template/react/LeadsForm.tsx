@@ -1,9 +1,8 @@
 import React from 'react'
-//import { Form } from 'react-bootstrap';
 
-interface CountdownProps {}
+interface LeadsFormProps {}
 
-const Countdown: StorefrontFunctionComponent<CountdownProps> = ({}) => {
+const LeadsForm: StorefrontFunctionComponent<LeadsFormProps> = ({}) => {
   return (
    <div>
      <form>
@@ -20,11 +19,11 @@ const Countdown: StorefrontFunctionComponent<CountdownProps> = ({}) => {
   )
 }
 
-Countdown.schema = {
+LeadsForm.schema = {
   title: 'editor.countdown.title',
   description: 'editor.countdown.description',
   type: 'object',
   properties: {},
 }
 
-export default Countdown
+export default LeadsForm
