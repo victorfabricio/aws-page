@@ -190,7 +190,7 @@
       "callToActionText": "Saiba mais",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-example",
-      "textAlignment": "center"
+      "textAlignment": "center" 
     }
   },
   "info-card#blockchain": {
@@ -225,7 +225,7 @@
     "props":{
       "horizontalAlign": "center"
     },
-    "children":["rich-text#2"]
+    "children":["rich-text#2", "countdown"]
   }
  }
   
