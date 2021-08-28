@@ -1,5 +1,8 @@
 {
-  "countdown": {
-    "component": "Countdown"
+  "leadsForm": {
+    "component": "LeadsForm"
+  },
+  "leadsList": {
+    "component": "LeadsList"
   }
 }

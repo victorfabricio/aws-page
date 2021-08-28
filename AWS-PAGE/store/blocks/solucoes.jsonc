@@ -1,0 +1,75 @@
+{
+    "search-result-layout.customQuery#1": {
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 20,
+                "queryField": "aws",
+                "mapField": "ft",
+                "skusFilter": "ALL_AVAILABLE"
+            }
+        },
+          "blocks": [
+            "search-result-layout.desktop"
+          ]
+     },
+     "search-result-layout.desktop": {
+      "children": [
+        "search-content#lp"
+      ],
+      "props":{
+        "pagination": "showMore",
+        "preventRouteChange": true
+      }
+    },
+    "search-content#lp": {
+      "blocks": ["gallery#lp", "not-found"]
+    },
+    "gallery#lp": {
+      "props": {
+        "layouts": [
+          {
+            "name": "grid",
+            "component": "GridSummary",
+            "itemsPerRow": {
+              "(min-width:1300px)": 4,
+              "desktop": 4,
+              "tablet": 2,
+              "phone": 1
+            }
+          },
+          {
+            "name": "list",
+            "component": "ListSummary",
+            "itemsPerRow": 1
+          }
+        ],
+        "ListSummary": "product-summary.shelf#lp",
+        "GridSummary": "product-summary.shelf#lp"
+      }
+    },
+    "product-summary.shelf#lp": {
+      "children": [
+        "product-summary-name",
+        "product-images#lp",
+        "product-summary-price",
+        "add-to-cart-button#lp"
+      ],
+      "props": {
+        "blockClass" :[]
+      }
+    },
+    "product-images#lp": {
+      "props": {
+        "showNavigationArrows": true,
+        "showPaginationDots": true
+      }
+    },
+    "add-to-cart-button#lp": {
+      "props": {
+        "onClickBehavior": "go-to-product-page",
+        "text": "Detalhes"
+      }
+    }
+}
