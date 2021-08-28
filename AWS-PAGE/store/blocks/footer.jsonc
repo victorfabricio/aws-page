@@ -1,0 +1,43 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": { 
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "footer-layout.mobile": { 
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "flex-layout.row#footer": { 
+    "children": [
+      "rich-text#footer",
+      "social-networks"
+    ] 
+  },
+  "rich-text#footer": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "text": "2021, Grupo 11, Inc",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "blockClass": "help-message"
+  }
+  },
+  "social-networks": {
+    "props":{
+      "textAlignment": "RIGTH",
+      "socialNetworks": [
+        {"url": "https://twitter.com/awscloud", "name": "Twitter"},
+        {"url": "https://www.facebook.com/amazonwebservices.pt/?brand_redir=153063591397681", "name": "Facebook"},
+        {"url": "https://www.linkedin.com/company/amazon-web-services/", "name": "Linkedin" },
+        {"url": "https://www.youtube.com/user/AmazonWebServices", "name": "Youtube"}
+        
+      ]
+    }
+  }
+}

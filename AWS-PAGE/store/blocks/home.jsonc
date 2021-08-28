@@ -1,0 +1,232 @@
+{
+  "store.home": { 
+    "blocks": [
+      "tab-layout",
+      "slider-layout",
+      "flex-layout.row#home"
+    ]
+  },
+
+  "tab-layout": {
+    "children": [
+      "tab-list",
+      "tab-content"
+    ]
+  },
+  
+  "tab-list": {
+   "children": [
+    "tab-list.item#1",
+    "tab-list.item#2",
+   "tab-list.item#3"
+    ]
+  },
+  
+  "tab-list.item#1": {
+    "props": {
+      "tabId": "soluções",
+      "label": "Soluções",
+     "defaultActiveTab": true
+    }
+  },
+  
+  "tab-list.item#2": {
+    "props": {
+      "tabId": "sobre",
+     "label": "Sobre" 
+   }  
+  },
+
+  "tab-list.item#3": {
+    "props": {
+     "tabId": "leads",
+     "label": "Leads"
+    }
+  },
+  
+  "slider-layout": {
+   "children": [
+     "info-card#1", 
+     "info-card#2",
+     "info-card#3"
+  ],
+  "props": {
+   "itemsPerPage": {
+    "desktop": 1,
+    "tablet": 1,
+    "phone": 1
+  },
+    "infinite": true,
+    "showNavigationArrows": "desktopOnly",
+     "blockClass": "products"
+    }
+  },
+  
+  "info-card#1": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://d1.awsstatic.com/webteam/homepage/heroes/backgrounds/Site-Merch_CoreDk_Pattern_02_Hero-BG.3b56c4ed52c1ce3818652f497f8c8a26578842fd.png",
+      "headline": "Comece a criar com a AWS ainda hoje",
+      "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? AAWS tem os serviços para ajudar a criar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
+      "callToActionMode": "button",
+      "callToActionText": "Comece a usar gratuitamente",
+      "callToActionUrl": "/sale/d",
+     "textAlignment": "center"
+   }
+  },
+  
+  "info-card#2": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://d1.awsstatic.com/webteam/homepage/heroes/backgrounds/Site-Merch_CoreDk_Pattern_03_Hero-BG.ea87b59ddd49e125873d158e64d60bf4647b4434.png",
+      "headline": "Comece a criar com a AWS ainda hoje",
+      "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? AAWS tem os serviços para ajudar a criar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
+      "callToActionMode": "button",
+      "callToActionText": "Comece a usar gratuitamente",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+   }
+  },
+  
+  "info-card#3": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://d1.awsstatic.com/webteam/homepage/heroes/backgrounds/Site-Merch_CoreDk_Pattern_05_Hero-BG.90a3bf91e2be76ea65e1eaca7e704d78355b27fa.png",
+      "headline": "Comece a criar com a AWS ainda hoje",
+      "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? AAWS tem os serviços para ajudar a criar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
+      "callToActionMode": "button",
+      "callToActionText": "Comece a usar gratuitamente",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.row#home": {
+    "props":{
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.col#home"
+    ]
+  },
+  "flex-layout.col#home": {
+    "props":{
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "flex-layout.row#block-info-cards",
+      "flex-layout.row#block-form"              
+      ]
+  },
+  "rich-text#1": { 
+    "props": { 
+      "text": "Confira as soluções",
+      "textAlignment": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "flex-layout.row#block-info-cards": {
+    "props":{
+      "horizontalAlign": "center"
+    },
+    "children":[
+      "flex-layout.col#info-cards"
+    ]
+  },
+  "flex-layout.col#info-cards": {
+    "props":{
+      "horizontalAlign": "center"
+    },
+    "children":["rich-text#1",
+      "flex-layout.row#info-cards"
+      ]
+  },
+  "flex-layout.row#info-cards": {
+    "children":[
+      "info-card#armazenamento",
+      "info-card#maching-learning",
+      "info-card#computacao-sem-sevidor",
+      "info-card#blockchain"
+    ]
+  },
+  "info-card#armazenamento": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "textAligment": "left",
+      "headline": "Armazenamento",
+      "subhead": "Opções resilientes e econômicas para backup, recuperação de desastres e arquivamento de dados em escala de petabytes",
+      "callToActionMode": "Link",
+      "callToActionText": "Saiba mais",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#maching-learning": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "textAligment": "left",
+      "headline": "Maching Learning",
+      "subhead": "Crie usando serviçoes e plataformas potentes, assim como o mais amplo suporte a estruturas de trabalho de machine learning em qualquer lugar",
+      "callToActionMode": "Link",
+      "callToActionText": "Saiba mais",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#computacao-sem-sevidor": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "textAligment": "left",
+      "headline": "Computação sem Servidor",
+      "subhead": "Crie e execute aplicações e serviços sem se preocupar com servidores",
+      "callToActionMode": "Link",
+      "callToActionText": "Saiba mais",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#blockchain": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "textAligment": "left",
+      "headline": "BlockChain",
+      "subhead": "Armazene, categorize e analise todos os dados com segurança em um único repositório centralizado",
+      "callToActionMode": "Link",
+      "callToActionText": "Saiba mais",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#2": { 
+    "props": { 
+      "text": "Fique por dentro das novidades",
+      "textAlignment": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+  "flex-layout.row#block-form":{
+    "props":{
+      "horizontalAlign": "center",
+      "blockClass": "form"
+    },
+    "children":["flex-layout.col#form"]
+  },
+  "flex-layout.col#form":{
+    "props":{
+      "horizontalAlign": "center"
+    },
+    "children":["rich-text#2"]
+  }
+ }
+  
+  

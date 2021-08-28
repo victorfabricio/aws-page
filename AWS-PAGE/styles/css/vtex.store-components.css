@@ -1,0 +1,23 @@
+.logoImage {
+  margin: 10px;
+}
+
+.infoCardContainer {
+  
+  width: 100%;
+
+}
+
+.infoCardCallActionContainer :global(.vtex-button) { 
+  text-transform: initial;
+}
+
+
+.sliderArrows {
+  color: #fff;
+}
+
+.searchBarContainer {
+  width: 600px;
+  position: relative;
+}
