@@ -14,7 +14,7 @@ const Countdown: StorefrontFunctionComponent<CountdownProps> = ({}) => {
      Email: <br/>
      <input type="text" name="email"/> <br/>
      <br/>
-     <button>Cadastrar naaa Newsletter</button>
+     <button>Cadastrar na Newsletter</button>
      </form>
      </div>
   )
