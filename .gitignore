@@ -1,18 +1,18 @@
 ### SublimeText ###
-*.sublime-workspace
+store-block-template/*.sublime-workspace
 
 ### OSX ###
-.DS_Store
-.AppleDouble
-.LSOverride
-Icon
+store-block-template/.DS_Store
+store-block-template/.AppleDouble
+store-block-template/.LSOverride
+store-block-template/Icon
 
 # Thumbnails
-._*
+store-block-template/._*
 
 # Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+store-block-template/.Spotlight-V100
+store-block-template/.Trashes
 
 ### Windows ###
 # Windows image file caches
@@ -26,13 +26,13 @@ Desktop.ini
 $RECYCLE.BIN/
 
 # App specific
-node_modules/
-docs/_book/
-.tmp
-.idea
-npm-debug.log
-.build/
-lib
-.eslintrc
-*.orig
-react/yarn.lock
+store-block-template/node_modules/
+store-block-template/docs/_book/
+store-block-template/.tmp
+store-block-template/.idea
+store-block-template/npm-debug.log
+store-block-template/.build/
+store-block-template/lib
+store-block-template/.eslintrc
+store-block-template/*.orig
+store-block-template/react/yarn.lock
