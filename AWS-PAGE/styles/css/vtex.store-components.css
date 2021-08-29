@@ -3,7 +3,7 @@
 }
 
 .infoCardContainer {
-  
+  border-top: 20px;  
   width: 100%;
 
 }
@@ -17,6 +17,31 @@
 }
 
 .searchBarContainer {
-  width: 600px;
+  width: 528px;
   position: relative;
+}
+
+.infoCardHeadline--slid {
+  font-size: 27px;
+}
+
+.infoCardSubhead--slid {
+  font-size: 20px;
+}
+
+
+.infoCardHeadline--text {
+  color: #00a1c9;
+  font-size: 16px;
+
+}
+
+.infoCardSubhead--text {
+  color: #000;
+  font-size: 14px;
+}
+
+.infoCardCallActionText--text {
+  color: #00a1c9;
+  font-size: 14px;
 }

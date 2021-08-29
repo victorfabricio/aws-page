@@ -1,8 +1,7 @@
 {
   "store.home": { 
     "blocks": [
-      "tab-layout"
-      
+      "tab-layout"      
     ]
   },
 
@@ -49,6 +48,7 @@
      "label": "Leads"
     }
   },
+
   "tab-content": {
     "props":{"textAligment":"CENTER"},
     "children":[ 
@@ -58,13 +58,17 @@
       "tab-content.item#leads"
     ]
   },
+
   "tab-content.item#home":{
     "children":[ 
       "slider-layout",
-      "flex-layout.row#home" 
+      "rich-text#1",
+      "flex-layout.row#home1",
+      "flex-layout.row#home2" 
     ],
     "props":{"tabId":"home"}
   },
+
   "tab-content.item#solucoes": {
     "children":[ "search-result-layout.customQuery#1" ],
     "props":{"tabId":"soluções"}
@@ -79,6 +83,7 @@
     "children":[ "leadsList" ],
     "props":{"tabId":"leads"}
   },
+
   "slider-layout": {
    "children": [
      "info-card#1", 
@@ -107,7 +112,8 @@
       "callToActionMode": "button",
       "callToActionText": "Comece a usar gratuitamente",
       "callToActionUrl": "/sale/d",
-     "textAlignment": "center"
+     "textAlignment": "center",
+     "blockClass": "slid"
    }
   },
   
@@ -121,7 +127,8 @@
       "callToActionMode": "button",
       "callToActionText": "Comece a usar gratuitamente",
       "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
+      "textAlignment": "center",
+      "blockClass": "slid"
    }
   },
   
@@ -135,50 +142,36 @@
       "callToActionMode": "button",
       "callToActionText": "Comece a usar gratuitamente",
       "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
+      "textAlignment": "center",
+      "blockClass": "slid"
     }
   },
-  "flex-layout.row#home": {
+
+  "flex-layout.row#home1": {
     "props":{
-      "horizontalAlign": "center"
+      "horizontalAlign": "center",
+      "fullWidth": true
     },
     "children": [
-      "flex-layout.col#home"
-    ]
+      "flex-layout.row#block-info-cards"     
+     ]
   },
-  "flex-layout.col#home": {
-    "props":{
-      "horizontalAlign": "center"
-    },
-    "children":[
-      "flex-layout.row#block-info-cards",
-      "flex-layout.row#block-form"              
-      ]
-  },
+
   "rich-text#1": { 
     "props": { 
       "text": "Confira as soluções",
       "textAlignment": "CENTER",
-      "font": "t-heading-1"
+      "textPosition": "CENTER",
+      "font": "t-heading-1",
+      "blockClass": ["text", "rich1"]
     }
   },
+
   "flex-layout.row#block-info-cards": {
     "props":{
-      "horizontalAlign": "center"
+      "horizontalAlign": "center",
+      "blockClass": "bloc"
     },
-    "children":[
-      "flex-layout.col#info-cards"
-    ]
-  },
-  "flex-layout.col#info-cards": {
-    "props":{
-      "horizontalAlign": "center"
-    },
-    "children":["rich-text#1",
-      "flex-layout.row#info-cards"
-      ]
-  },
-  "flex-layout.row#info-cards": {
     "children":[
       "info-card#armazenamento",
       "info-card#maching-learning",
@@ -186,18 +179,18 @@
       "info-card#blockchain"
     ]
   },
+
   "info-card#armazenamento": {
     "props": {
       "isFullModeStyle": false,
-      "textPosition": "right",
+      "textPosition": "left",
       "textAligment": "left",
       "headline": "Armazenamento",
       "subhead": "Opções resilientes e econômicas para backup, recuperação de desastres e arquivamento de dados em escala de petabytes",
       "callToActionMode": "Link",
       "callToActionText": "Saiba mais",
       "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-example",
-      "textAlignment": "center"
+      "blockClass": ["info-card-example", "text"]
     }
   },
   "info-card#maching-learning": {
@@ -210,8 +203,8 @@
       "callToActionMode": "Link",
       "callToActionText": "Saiba mais",
       "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-example",
-      "textAlignment": "center"
+      "blockClass": ["info-card-example", "text"]
+      
     }
   },
   "info-card#computacao-sem-sevidor": {
@@ -224,8 +217,7 @@
       "callToActionMode": "Link",
       "callToActionText": "Saiba mais",
       "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-example",
-      "textAlignment": "center" 
+      "blockClass": ["info-card-example", "text"]
     }
   },
   "info-card#blockchain": {
@@ -238,27 +230,33 @@
       "callToActionMode": "Link",
       "callToActionText": "Saiba mais",
       "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-example",
-      "textAlignment": "center"
+      "blockClass": ["info-card-example", "text"]
     }
   },
   "rich-text#2": { 
     "props": { 
       "text": "Fique por dentro das novidades",
       "textAlignment": "CENTER",
-      "font": "t-heading-1"
+      "font": "t-heading-1",
+      "blockClass": "rich2"
     }
   },
-  "flex-layout.row#block-form":{
+
+  "flex-layout.row#home2": {
     "props":{
-      "horizontalAlign": "center",
-      "blockClass": "form"
-    },
-    "children":["flex-layout.col#form"]
+    "horizontalAlign": "center",
+    "fullWidth": true
   },
+  "children": [    
+    "flex-layout.col#form"          
+   ]
+},
+
   "flex-layout.col#form":{
     "props":{
-      "horizontalAlign": "center"
+      "horizontalAlign": "center",
+      "fullWidth": true,
+      "blockClass": "form"
     },
     "children":["rich-text#2", "leadsForm"]
   }

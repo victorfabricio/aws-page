@@ -1,12 +1,13 @@
 .listContainer {
-  background: #232f3e;
+  background: #242f3e;
 }
 
 .listItem :global(.vtex-button) { 
   color: #fff;
   border: none;
   font-family: Helvetica, sans-serif;
-  text-transform: capitalize
+  text-transform: capitalize;
+  font-size: 16px;
 }
 
 .listItem :global(.vtex-button):hover { 
