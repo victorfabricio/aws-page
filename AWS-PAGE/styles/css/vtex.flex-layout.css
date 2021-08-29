@@ -1,4 +1,26 @@
 .flexRowContent {
-  background: #232f3e;
+  background: #fff;
+  justify-content: space-around;
 }
 
+.flexRowContent--foot {
+  background: #232f3e;
+  width: 100%;
+}
+
+.flexRowContent--head {
+  background: #242f3e;
+  width: 100%;
+}
+
+.flexRow--form {
+  background: #1b2839;
+}
+
+.flexRow--bloc {
+  justify-content: center;
+}
+
+.flexCol--form {
+  background: #1b2839;
+}

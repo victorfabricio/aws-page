@@ -16,7 +16,11 @@
     "children": [
       "rich-text#footer",
       "social-networks"
-    ] 
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "foot"
+    }
   },
   "rich-text#footer": {
     "props": {
@@ -30,7 +34,6 @@
   },
   "social-networks": {
     "props":{
-      "textAlignment": "RIGTH",
       "socialNetworks": [
         {"url": "https://twitter.com/awscloud", "name": "Twitter"},
         {"url": "https://www.facebook.com/amazonwebservices.pt/?brand_redir=153063591397681", "name": "Facebook"},
