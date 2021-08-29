@@ -68,6 +68,7 @@ ap-vtex-aws/build/Release
 
 # Dependency directories
 ap-vtex-aws/node_modules
+ap-vtex-aws/node/node_modules
 ap-vtex-aws/jspm_packages
 
 # Optional npm cache directory
