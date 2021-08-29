@@ -4,6 +4,7 @@ import {method, Service } from '@vtex/api'
 import { Clients } from './clients'
 import { lead } from './middlewares/lead'
 import { leadAll } from './middlewares/leadAll'
+import { leadPost } from './middlewares/leadPost'
 
 
 
@@ -21,6 +22,13 @@ const clients: ClientsConfig<Clients> = {
 
 declare global {
   type Context = ServiceContext<Clients>
+   interface LeadData {
+    "id":string,
+    "name":string ,
+    "email":string ,
+    "phone":string,
+    "level":string
+   }
 }
 
 export default new Service({
@@ -31,6 +39,9 @@ export default new Service({
     }),
     leadsAll: method({
       GET: [leadAll],
+    }),
+    leadsPost: method({
+      POST: [leadPost],
     }),
   },
 })

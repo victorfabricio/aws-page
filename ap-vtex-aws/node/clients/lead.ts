@@ -12,6 +12,18 @@ export default class Lead extends ExternalClient {
     })
   }
 
+  public async getPost(lead: string, data:LeadData): Promise<string> {
+    return this.http.post(lead, data,{
+      metric: 'lead-get',
+    })
+  }
+  public async getLeadAll(lead: string): Promise<string> {
+    return this.http.get(lead, {
+      metric: 'lead-get',
+    })
+  }
+
+
   public async getLeadWithHeaders(
     lead: string
   ): Promise<IOResponse<string>> {

@@ -13,6 +13,10 @@
     "leadsAll": {
       "path": "/_v/leads",
       "public": true
+    },
+    "leadsPost": {
+      "path": "/_v/leads/new",
+      "public": true
     }
   }
 }
