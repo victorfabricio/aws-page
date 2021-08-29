@@ -26,7 +26,7 @@ Desktop.ini
 $RECYCLE.BIN/
 
 # App specific
-store-block-template/node/node_modules/
+/store-block-template/node/node_modules
 store-block-template/docs/_book/
 store-block-template/.tmp
 store-block-template/.idea
@@ -35,4 +35,4 @@ store-block-template/.build/
 store-block-template/lib
 store-block-template/.eslintrc
 store-block-template/*.orig
-store-block-template/react/node_modules/
+store-block-template/react/node_modules
