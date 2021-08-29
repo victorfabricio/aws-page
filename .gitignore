@@ -26,7 +26,8 @@ Desktop.ini
 $RECYCLE.BIN/
 
 # App specific
-/store-block-template/node/node_modules
+store-block-template/node/node_modules
+store-block-template/node_modules
 store-block-template/docs/_book/
 store-block-template/.tmp
 store-block-template/.idea
