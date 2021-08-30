@@ -23,7 +23,7 @@
           "text": "SOBRE A AWS",
           "textColor": "c-on-muted-4",
           "font": "t-heading-2",
-          "blockClass": "help-message"
+          "blockClass": "Sobre1"
         }
   },
   "rich-text#sobre2":{
@@ -33,7 +33,7 @@
       "text": "Em 2006, a Amazon Web Services (AWS) começou a oferecer serviços de infraestrutura de TI para empresas por meio de serviços web – hoje conhecidos como computação em nuvem. Um dos principais benefícios da computação em nuvem é a oportunidade de substituir diretamente gastos com a infraestrutura principal por preços variáveis baixos, que se ajustam de acordo com sua empresa. Com a Nuvem, as empresas não precisam mais planejar ou adquirir servidores, assim como outras infraestruturas de TI, com semanas ou meses de antecedência. Em vez disso, podem instantaneamente rodar centenas de milhares de servidores em minutos e oferecer resultados mais rapidamente.",
       "textColor": "c-on-muted-4",
       "font": "t-heading-5",
-      "blockClass": "help-message"
+      "blockClass": "Sobre2"
     }
   },
   "rich-text#sobre3": {
@@ -43,7 +43,7 @@
       "text": "Atualmente, a Amazon Web Services oferece uma plataforma de infraestrutura altamente confiável, escalável e de baixo custo na nuvem que potencializa centenas de milhares de empresas em 190 países ao redor do mundo. Com datacenters localizados nos EUA, Europa, Brasil, Cingapura, Japão e Austrália, clientes de todos os setores estão tendo vantagens com os seguintes benefícios:",
       "textColor": "c-on-muted-4",
       "font": "t-heading-5",
-      "blockClass": "help-message"
+      "blockClass": "Sobre2"
     }
   },
   "flex-layout.row#points":{
@@ -63,7 +63,7 @@
       "text": "BAIXO CUSTO",
       "textColor": "c-on-muted-4",
       "font": "t-heading-3",
-      "blockClass": "help-message"
+      "blockClass": "sobre-points"
     }
 },
 "rich-text#sobre5": {
@@ -73,7 +73,7 @@
     "text": "AGILIDADE E ELASTICIDADE INSTANTÂNEA",
     "textColor": "c-on-muted-4",
     "font": "t-heading-3",
-    "blockClass": "help-message"
+    "blockClass": "sobre-points"
   }
 },
 "rich-text#sobre6": {
@@ -83,7 +83,7 @@
     "text": "ABERTA E FLEXÍVEL",
     "textColor": "c-on-muted-4",
     "font": "t-heading-3",
-    "blockClass": "help-message"
+    "blockClass": "sobre-points"
   }
 },
 "rich-text#sobre7": {
@@ -93,14 +93,28 @@
     "text": "SEGURO",
     "textColor": "c-on-muted-4",
     "font": "t-heading-3",
-    "blockClass": "help-message"
+    "blockClass": "sobre-points"
   }
 },
 "flex-layout.row#maior-plataforma": {
+  
+  "children":["flex-layout.col#maior-plataforma"]
+},
+"flex-layout.col#maior-plataforma":{
+  
+  "children":["flex-layout.row#tres-blocos","flex-layout.row#dois-blocos"]
+},
+"flex-layout.row#tres-blocos":{
   "props":{
     "textAlignment":"CENTER"
   },
-  "children":["info-card#sobre1", "info-card#sobre2", "info-card#sobre3", "info-card#sobre4", "info-card#sobre5" ]
+  "children":["info-card#sobre1", "info-card#sobre2", "info-card#sobre3"]
+},
+"flex-layout.row#dois-blocos":{
+  "props":{
+    "textAlignment":"RIGHT"
+  },
+  "children":["info-card#sobre4", "info-card#sobre5","info-card#sobre9"]
 },
 "rich-text#sobre8": {
   "props": {
@@ -108,7 +122,8 @@
     "textPosition": "CENTER",
     "text": "A maior plataforma de nuvem",
     "textColor": "c-on-muted-4",
-    "font": "t-heading-3"
+    "font": "t-heading-1",
+    "blockClass": "maior-plataforma"
   }
 },
 "info-card#sobre1": {
@@ -117,53 +132,65 @@
     "textPosition": "left",
     "headline": "A maior funcionalidade",
     "subhead":"A AWS oferece uma quantidade consideravelmente maior de serviços – e mais recursos com esses serviços – do que qualquer outro provedor de nuvem: de tecnologias de infraestrutura, como computação, armazenamento e bancos de dados, a tecnologias emergentes como machine learning e inteligência artificial, data lakes, análises e Internet das Coisas. Com isso, é mais rápido, mas fácil e mais econômico mover seus aplicativos para a nuvem e construir praticamente qualquer coisa que você possa imaginar.",
-    "blockClass": "info-card-example",
-    "textAlignment": "center",
+    "blockClass": "info-card-sobre-3",
+    "textAlignment": "left",
     "callToActionMode": "none"
   }
 },
 "info-card#sobre2": {
   "props": {
     "isFullModeStyle": false,
-    "textPosition": "left",
+    "textPosition": "center",
     "headline": "A maior comunidade de clientes e parceiros",
     "subhead":"A AWS tem a maior e mais dinâmica comunidade, com milhões de clientes ativos e dezenas de milhares de parceiros no mundo todo. Clientes em praticamente todos os setores e de todos os tamanhos, incluindo startups, corporações e organizações do setor público, estão executando todo tipo imaginável de caso de uso na AWS. A Rede de parceiros da AWS (APN) inclui milhares de integradores de sistemas especializados nos serviços da AWS e dezenas de milhares de provedores independentes de software (ISVs) que adaptam suas tecnologias para funcionar com a AWS. ",
-    "blockClass": "info-card-example",
-    "textAlignment": "center",
+    "blockClass": "info-card-sobre-3",
+    "textAlignment": "left",
     "callToActionMode": "none"
   }
 },
 "info-card#sobre3": {
   "props": {
     "isFullModeStyle": false,
-    "textPosition": "left",
+    "textPosition": "center",
     "headline": "Mais seguro",
     "subhead":"A AWS foi projetada para ser um dos ambientes de computação em nuvem mais flexíveis e seguros atualmente disponíveis. Nossa infraestrutura central foi criada para satisfazer aos requisitos de segurança militares, de bancos globais e de outras organizações que lidam com informações altamente confidenciais. Isso é respaldado por um conjunto avançado de ferramentas de segurança de nuvem, com 230 recursos essenciais e serviços de segurança, conformidade e governança. A AWS é compatível com 90 normas de segurança e certificações de conformidade, e todos os 117 serviços da AWS que armazenam dados de clientes oferecem criptografia de dados.",
-    "blockClass": "info-card-example",
-    "textAlignment": "center",
+    "blockClass": "info-card-sobre-3",
+    "textAlignment": "left",
     "callToActionMode": "none"
   }
 },
 "info-card#sobre4": {
   "props": {
     "isFullModeStyle": false,
-    "textPosition": "left",
+    "textPosition": "center",
     "headline": "O ritmo de inovação mais acelerado",
     "subhead":"Com a AWS, você pode utilizar as últimas tecnologias para conduzir testes e inovar mais rapidamente. Estamos sempre inovando a um ritmo cada vez mais acelerado para criar tecnologias completamente novas que você pode usar para transformar seus negócios. Por exemplo, em 2014, a AWS abriu o espaço de computação sem servidor com o lançamento do AWS Lambda, que permite que desenvolvedores executem códigos sem provisionar nem gerenciar servidores. E a AWS construiu o Amazon SageMaker, um serviço completamente gerenciado de machine learning que permite que desenvolvedores e cientistas usem essa tecnologia sem qualquer experiência anterior.",
-    "blockClass": "info-card-example",
-    "textAlignment": "center",
+    "blockClass": "info-card-sobre-2",
+    "textAlignment": "left",
     "callToActionMode": "none"
   }
 },
 "info-card#sobre5": {
   "props": {
     "isFullModeStyle": false,
-    "textPosition": "left",
+    "textPosition": "center",
     "headline": "O conhecimento operacional mais comprovado",
     "subhead":"A AWS tem experiência, maturidade, confiabilidade, segurança e performance incomparáveis nas quais você pode confiar para suas aplicações mais importantes. Há mais de 15 anos, a AWS entrega serviços em nuvem a milhões de clientes no mundo todo que realizam uma grande variedade de casos de uso. Além disso, a AWS possui a mais longa experiência operacional e em maior escala do que qualquer outro provedor de nuvem.",
-    "blockClass": "info-card-example",
-    "textAlignment": "center",
+    "blockClass": "info-card-sobre-2",
+    "textAlignment": "left",
+    "callToActionMode": "none"
+  }
+},
+"info-card#sobre9": {
+  "props": {
+    "isFullModeStyle": false,
+    "textPosition": "center",
+    "headline": "Rede global de regiões da AWS",
+    "subhead":"A AWS tem a mais extensa infraestrutura de nuvem global. Nenhum outro provedor de nuvem oferece tantas regiões com múltiplas Zonas de Disponibilidade conectadas por redes altamente redundantes com baixa latência e alta taxa de transferência. A AWS tem 81 Zonas de Disponibilidade em 25 regiões geográficas em todo o mundo e anunciou planos para mais 21 Zonas de Disponibilidade e mais 7 regiões da AWS na Austrália, Emirados Árabes Unidos (EAU), Espanha, Índia, Indonésia, Israel, e Suíça. O modelo de região e Zona de Disponibilidade da AWS foi reconhecido pela Gartner como a abordagem recomendada para a execução de aplicações empresariais que exigem alta disponibilidade.",
+    "blockClass": "info-card-sobre-2",
+    "textAlignment": "left",
     "callToActionMode": "none"
   }
 }
 }
+

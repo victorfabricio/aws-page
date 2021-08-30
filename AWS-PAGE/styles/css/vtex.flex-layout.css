@@ -23,3 +23,10 @@
 .stretchChildrenWidth {
   background: #E5E5E5;
 }
+
+.productName {
+  color: black;
+}
+.price {
+  color: black;
+}

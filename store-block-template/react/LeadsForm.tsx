@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { object } from 'prop-types';
+import { useCssHandles } from 'vtex.css-handles'
+
+const CSS_HANDLES = ['leadsForm','botao']
 
 interface LeadsFormProps { }
 
@@ -49,10 +52,10 @@ const LeadsForm: StorefrontFunctionComponent<LeadsFormProps> = ({ }) => {
     setPhone('');
 
   }
-
+  const handles = useCssHandles(CSS_HANDLES)
   return (
     <div>
-      <form onSubmit={e => e.preventDefault()}>
+      <form className={`${handles.leadsForm} c-muted-5 db tc`} onSubmit={e => e.preventDefault()}>
         Nome: <br />
         <input type="text" name="name" value={name} onChange={e => setName((e.target as HTMLInputElement).value)} /> <br />
         Telefone: <br />
@@ -60,7 +63,7 @@ const LeadsForm: StorefrontFunctionComponent<LeadsFormProps> = ({ }) => {
         Email: <br />
         <input type="email" name="email" value={email} onChange={e => setEmail((e.target as HTMLInputElement).value)} /> <br />
         <br />
-        <button onClick={handlePesquisa}>Cadastrar na Newsletter</button>
+        <button className={`${handles.botao} br2 h2`} style={{color:'white', background:'#e15500'}} onClick={handlePesquisa}>Cadastrar na Newsletter</button>
         {erro ? <span>Dados não encontrados.</span> : ''}
       </form>
     </div>

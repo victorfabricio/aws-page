@@ -23,10 +23,12 @@
 
 .infoCardHeadline--slid {
   font-size: 27px;
+  color: #fff;
 }
 
 .infoCardSubhead--slid {
   font-size: 20px;
+  color: #fff
 }
 
 
@@ -63,5 +65,50 @@
   width: 200px;
   margin-bottom: -20%;
 }
+.infoCardContainer--info-card-sobre-3 {
+  background-color: #242f3e;
+}
+.infoCardContainer--info-card-sobre-2 {
+  background-color: #242f3e;
+}
+.infoCardHeadline--info-card-sobre-3{
+  color: #fff;
+  font-size: 20px;
+  margin-left: 1.5rem;
+  width: 400px;
+  max-width: 300%;
+}
+.infoCardHeadline--info-card-sobre-2{
+  color: #fff;
+  font-size: 20px;
+  margin-left: 1.5rem;
+  width: 400px;
+  max-width: 300%;
+}
+.infoCardSubhead--info-card-sobre-3 {
+  color: #fff;
+  margin-left: 1.5rem;
+  text-align: justify;
+  width: 400px ;
+  font-size: 13px;
+  max-width: 300%;
+  margin-bottom: 5px;
+}
+.infoCardSubhead--info-card-sobre-2 {
+  color: #fff;
+  margin-left: 1.5rem;
+  text-align: justify;
+  width: 400px ;
+  font-size: 13px;
+  max-width: 300%;
+  margin-bottom: 20px;
+}
 
+.productImageTag--main {
+  max-width: 30px;
+  max-height:40px;
+}
 
+.sellingPrice {
+  color: black;
+}
