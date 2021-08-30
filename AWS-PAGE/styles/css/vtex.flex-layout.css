@@ -1,5 +1,4 @@
 .flexRowContent {
-  background: #fff;
   justify-content: space-around;
 }
 
@@ -17,10 +16,10 @@
   background: #1b2839;
 }
 
-.flexRow--bloc {
-  justify-content: center;
-}
-
 .flexCol--form {
   background: #1b2839;
+}
+
+.stretchChildrenWidth {
+  background: #E5E5E5;
 }

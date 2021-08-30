@@ -3,3 +3,7 @@
 
 }
 
+.paginationDot--isActive{
+  background-color: #fff;
+  margin-bottom: 4px;
+}
