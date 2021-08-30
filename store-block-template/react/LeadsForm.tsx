@@ -38,7 +38,7 @@ const LeadsForm: StorefrontFunctionComponent<LeadsFormProps> = ({ }) => {
             });
         }
         else{
-          console.log("OBRIGADO. VOCÊ JÁ SE CADASTROU!")
+          console.log("OBRIGADO. VOCÊ JÁ ESTÁ CADASTRADO!")
         }
 
       });
