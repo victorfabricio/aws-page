@@ -5,6 +5,14 @@
   "minReplicas": 2,
   "maxReplicas": 4,
   "workers": 1,
+  "events": {
+    "someStates": {
+      "sender": "vtex.orders-broadcast",
+      "topics": [
+        "order-created"
+      ]
+    }
+  },
   "routes": {
     "leads": {
       "path": "/_v/leads/:lead",
@@ -16,6 +24,10 @@
     },
     "leadsPost": {
       "path": "/_v/leads/new",
+      "public": true
+    },
+    "orders": {
+      "path": "/_v/orders",
       "public": true
     }
   }
