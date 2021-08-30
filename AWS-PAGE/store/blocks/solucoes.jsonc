@@ -68,8 +68,8 @@
     },
     "add-to-cart-button#lp": {
       "props": {
-        "onClickBehavior": "go-to-product-page",
-        "text": "Detalhes"
+        "onClickBehavior": "add-to-cart",
+        "text": "ADICIONAR AO CARRINHO"
       }
     }
 }

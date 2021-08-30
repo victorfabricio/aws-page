@@ -1,7 +1,8 @@
-.socialNetworkImage {
-  position: relative;
+.socialNetworkImage{
+  vertical-align: middle;
+  margin-left: 30em;
+  margin-top: 2.5rem;
 }
-
 .socialNetworkWrapper {
-  background: #242F3E;
+  background-color: #242F3E
 }
