@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { object } from 'prop-types';
 
 interface LeadsFormProps { }
 
@@ -11,25 +12,41 @@ const LeadsForm: StorefrontFunctionComponent<LeadsFormProps> = ({ }) => {
 
   function handlePesquisa() {
 
-    axios.post(`https://joirdev--hiringcoders202111.myvtex.com/_v/leads/new`, {
-      "id": email,
-      "email": email,
-      "name": name,
-      "phone": phone,
-      "category": "lead",
+    axios.get(`https://joirdev--hiringcoders202111.myvtex.com/_v/leads/${email}`, {
+      headers: {
+        'Cache-Control': 'no-cache, no-store, must-revalidate'
+      }
     })
       .then(response => {
-        console.log(response);
-        setErro(false);
-        
 
-      })
-      .catch(err => {
-        setErro(true);
+        if (typeof (response.data.Item) === 'undefined') {
+          axios.post(`https://joirdev--hiringcoders202111.myvtex.com/_v/leads/new`, {
+            "id": email,
+            "email": email,
+            "name": name,
+            "phone": phone,
+            "category": "lead",
+          })
+            .then(response => {
+              console.log(response);
+              setErro(false);
+
+
+            })
+            .catch(err => {
+              setErro(true);
+            });
+        }
+        else{
+          console.log("OBRIGADO. VOCÊ JÁ SE CADASTROU!")
+        }
+
       });
-      setEmail('');
-      setName('');
-      setPhone('');
+
+
+    setEmail('');
+    setName('');
+    setPhone('');
 
   }
 
