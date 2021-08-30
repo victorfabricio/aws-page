@@ -1,4 +1,7 @@
 .socialNetworkImage {
   position: relative;
+}
 
+.socialNetworkWrapper {
+  background: #242F3E;
 }

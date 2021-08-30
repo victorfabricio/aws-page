@@ -1,9 +1,18 @@
-.paragraph--text {
+
+.paragraph--rich1 {
   color: #000000;
-  font-size: 25px;
+  font-size: 30px;
 }
 
-.paragraph {
+.paragraph--rich2 {
   color: #fff;
   font-size: 30px;
+}
+
+.container--help-message {
+  background: #242F3E;
+}
+
+.container--rich1 {
+  background:  #E5E5E5;
 }

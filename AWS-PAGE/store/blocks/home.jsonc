@@ -122,8 +122,8 @@
       "isFullModeStyle": true,
       "textPosition": "center",
       "imageUrl": "https://d1.awsstatic.com/webteam/homepage/heroes/backgrounds/Site-Merch_CoreDk_Pattern_03_Hero-BG.ea87b59ddd49e125873d158e64d60bf4647b4434.png",
-      "headline": "Comece a criar com a AWS ainda hoje",
-      "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? AAWS tem os serviços para ajudar a criar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
+      "headline": "Reinvente seu negócio usando dados",
+      "subhead": "Líderes eficazes confiam em dados para tomar decisões informadas e executar informações significativas. Eles constroem uma estratégia moderna de dados. Use os dados a seu favor na nuvem mais escalável, confiável e segura que existe. ",
       "callToActionMode": "button",
       "callToActionText": "Comece a usar gratuitamente",
       "callToActionUrl": "/sale/d",
@@ -137,8 +137,8 @@
       "isFullModeStyle": true,
       "textPosition": "center",
       "imageUrl": "https://d1.awsstatic.com/webteam/homepage/heroes/backgrounds/Site-Merch_CoreDk_Pattern_05_Hero-BG.90a3bf91e2be76ea65e1eaca7e704d78355b27fa.png",
-      "headline": "Comece a criar com a AWS ainda hoje",
-      "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? AAWS tem os serviços para ajudar a criar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
+      "headline": "Centro de recursos de conceitos básicos",
+      "subhead": "Aprenda sobre o desenvolvimento de aplicativos na AWS e as ferramentas do desenvolvedor disponíveis para dar suporte a você. Documentação técnica e outros recursos gatuitos para ajudar você. Adquira o conhecimento para navegar pela Nuvem AWS. ",
       "callToActionMode": "button",
       "callToActionText": "Comece a usar gratuitamente",
       "callToActionUrl": "/sale/d",
@@ -150,7 +150,8 @@
   "flex-layout.row#home1": {
     "props":{
       "horizontalAlign": "center",
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "bloc"
     },
     "children": [
       "flex-layout.row#block-info-cards"     
@@ -186,7 +187,7 @@
       "textPosition": "left",
       "textAligment": "left",
       "headline": "Armazenamento",
-      "subhead": "Opções resilientes e econômicas para backup, recuperação de desastres e arquivamento de dados em escala de petabytes",
+      "subhead": "Opções resilientes e econômicas para backup, recuperação de desastres e arquivamento de dados em escala de petabytes. Uma linha completa",
       "callToActionMode": "Link",
       "callToActionText": "Saiba mais",
       "callToActionUrl": "/sale/d",
@@ -204,7 +205,6 @@
       "callToActionText": "Saiba mais",
       "callToActionUrl": "/sale/d",
       "blockClass": ["info-card-example", "text"]
-      
     }
   },
   "info-card#computacao-sem-sevidor": {
@@ -213,7 +213,7 @@
       "textPosition": "left",
       "textAligment": "left",
       "headline": "Computação sem Servidor",
-      "subhead": "Crie e execute aplicações e serviços sem se preocupar com servidores",
+      "subhead": "Crie e execute aplicações e serviços sem se preocupar com servidores. Desenvolva aplicações mais ágeis, inove e responde às mudanças com rapidez",
       "callToActionMode": "Link",
       "callToActionText": "Saiba mais",
       "callToActionUrl": "/sale/d",
@@ -226,7 +226,7 @@
       "textPosition": "left",
       "textAligment": "left",
       "headline": "BlockChain",
-      "subhead": "Armazene, categorize e analise todos os dados com segurança em um único repositório centralizado",
+      "subhead": "Armazene, categorize e analise todos os dados com segurança em um único repositório centralizado. Desenvolvimento mais simples e rápido",
       "callToActionMode": "Link",
       "callToActionText": "Saiba mais",
       "callToActionUrl": "/sale/d",

@@ -2,23 +2,23 @@
   margin: 10px;
 }
 
+.searchBarContainer {
+  width: 528px;
+  position: relative;
+}
+
 .infoCardContainer {
   border-top: 20px;  
   width: 100%;
 
 }
 
-.infoCardCallActionContainer :global(.vtex-button) { 
+.infoCardCallActionContainer--slid :global(.vtex-button) { 
   text-transform: initial;
 }
 
 .sliderArrows {
   color: #fff;
-}
-
-.searchBarContainer {
-  width: 528px;
-  position: relative;
 }
 
 .infoCardHeadline--slid {
@@ -32,7 +32,8 @@
 
 .infoCardHeadline--text {
   color: #00a1c9;
-  font-size: 16px;
+  font-size: 14px;
+  margin-bottom: 0%;
 
 }
 
@@ -43,5 +44,24 @@
 
 .infoCardCallActionText--text {
   color: #00a1c9;
-  font-size: 14px;
+  font-size: 16px;
+  margin-bottom: 10%;
 }
+
+.infoCardContainer--info-card-example {
+  border-top: thick solid #242F3E;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-around;
+  margin-bottom: 10%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.infoCardTextContainer--info-card-example {
+  width: 200px;
+  margin-bottom: -20%;
+}
+
+
