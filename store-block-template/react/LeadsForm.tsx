@@ -16,7 +16,7 @@ const LeadsForm: StorefrontFunctionComponent<LeadsFormProps> = ({ }) => {
       "email": email,
       "name": name,
       "phone": phone,
-      "level": "lead",
+      "category": "lead",
     })
       .then(response => {
         console.log(response);
