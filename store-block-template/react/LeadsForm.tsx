@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { object } from 'prop-types';
 import { useCssHandles } from 'vtex.css-handles'
+import * as S from './styled'
+
 
 const CSS_HANDLES = ['leadsForm','botao']
 
@@ -55,19 +57,18 @@ const LeadsForm: StorefrontFunctionComponent<LeadsFormProps> = ({ }) => {
   }
   const handles = useCssHandles(CSS_HANDLES)
   return (
-    <div>
-      <form className={`${handles.leadsForm} c-muted-5 db tc`} onSubmit={e => e.preventDefault()}>
-        Nome: <br />
-        <input type="text" name="name" value={name} onChange={e => setName((e.target as HTMLInputElement).value)} /> <br />
-        Telefone: <br />
-        <input type="text" name="telephone" value={phone} onChange={e => setPhone((e.target as HTMLInputElement).value)} /> <br />
-        Email: <br />
-        <input type="email" name="email" value={email} onChange={e => setEmail((e.target as HTMLInputElement).value)} /> <br />
-        <br />
-        <button className={`${handles.botao} br2 h2`} style={{color:'white', background:'#e15500'}} onClick={handlePesquisa}>Cadastrar na Newsletter</button>
+    <S.Formulario>
+      <S.FormularioForm onSubmit={e => e.preventDefault()}>
+        <S.FormLabel>Nome Completo</S.FormLabel>
+        <S.FormInput type="text" name="name" value={name} placeholder="Nome Completo" onChange={e => setName((e.target as HTMLInputElement).value)} /> <br />
+        <S.FormLabel>Telefone</S.FormLabel>
+        <S.FormInput type="text" name="telephone" value={phone} placeholder="99999999999" onChange={e => setPhone((e.target as HTMLInputElement).value)} /> <br />
+        <S.FormLabel>Email</S.FormLabel>
+        <S.FormInput type="email" name="email" value={email} placeholder="seuemail@dominio.com.br" onChange={e => setEmail((e.target as HTMLInputElement).value)} /> <br />
+        <S.FormButton onClick={handlePesquisa}>Cadastrar na Newsletter</S.FormButton>
         {erro ? <span>Dados não encontrados.</span> : ''}
-      </form>
-    </div>
+      </S.FormularioForm>
+    </S.Formulario>
   )
 }
 
