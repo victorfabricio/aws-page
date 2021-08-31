@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
+import { useCssHandles } from 'vtex.css-handles'
 
 interface LeadsListProps { }
+const CSS_HANDLES = ['tabela']
 
 const LeadsList: StorefrontFunctionComponent<LeadsListProps> = ({ }) => {
 
@@ -10,7 +12,7 @@ const LeadsList: StorefrontFunctionComponent<LeadsListProps> = ({ }) => {
   let rand = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 1);
 
   useEffect(() => {
-    axios.get(`https://joirdev--hiringcoders202111.myvtex.com/_v/leads`,{
+    axios.get(`/_v/leads`,{
       headers:{
         'Cache-Control': 'no-cache, no-store, must-revalidate'
       }
@@ -20,15 +22,15 @@ const LeadsList: StorefrontFunctionComponent<LeadsListProps> = ({ }) => {
         console.log('TESTE==', response.data.ScannedCount)
       });
   }, []);
-
+  const handles = useCssHandles(CSS_HANDLES)
   console.log("TESTE3= ", repositories)
   return (
     <div>
       <br />
       <br />
       <ol>
-      <h1>USUÁRIOS</h1>
-          <table>
+      <h1></h1>
+          <table className={`${handles.tabela} tl dt--fixed`}>
           <thead>
             <tr>
               <th>NOME</th>
@@ -50,11 +52,11 @@ const LeadsList: StorefrontFunctionComponent<LeadsListProps> = ({ }) => {
               </li>
               <td></td>
               
-              <td>{repository.email}</td>
+              <td>{repository.phone}</td>
               
               <td></td>
               
-              <td>{repository.phone}</td>
+              <td>{repository.email}</td>
               <td></td>
               <td>{repository.category}</td>
             </tr>

@@ -4,6 +4,10 @@
 }
 
 .paginationDot--isActive{
-  background-color: #fff;
+  background-color: #e47911;
   margin-bottom: 4px;
+}
+
+.paginationDot {
+  margin-bottom: 20px;
 }
