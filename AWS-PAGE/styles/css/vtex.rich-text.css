@@ -17,7 +17,7 @@
   background:  #E5E5E5;
 }
 .paragraph--maior-plataforma {
-  color: white;
+  color: #fff;
   font-size: 30px;
 }
 .paragraph--Sobre1 {
@@ -46,4 +46,7 @@
   
   font-size: 20px;
   color: #00a1c9;
+}
+.container--sobre-points {
+  height: 150px;
 }

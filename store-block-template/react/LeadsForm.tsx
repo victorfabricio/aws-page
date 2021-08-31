@@ -15,7 +15,7 @@ const LeadsForm: StorefrontFunctionComponent<LeadsFormProps> = ({ }) => {
 
   function handlePesquisa() {
 
-    axios.get(`https://joirdev--hiringcoders202111.myvtex.com/_v/leads/${email}`, {
+    axios.get(`/_v/leads/${email}`, {
       headers: {
         'Cache-Control': 'no-cache, no-store, must-revalidate'
       }
@@ -23,7 +23,7 @@ const LeadsForm: StorefrontFunctionComponent<LeadsFormProps> = ({ }) => {
       .then(response => {
 
         if (typeof (response.data.Item) === 'undefined') {
-          axios.post(`https://joirdev--hiringcoders202111.myvtex.com/_v/leads/new`, {
+          axios.post(`/_v/leads/new`, {
             "id": email,
             "email": email,
             "name": name,
@@ -33,6 +33,7 @@ const LeadsForm: StorefrontFunctionComponent<LeadsFormProps> = ({ }) => {
             .then(response => {
               console.log(response);
               setErro(false);
+              alert("OBRIGADO. EMAIL CADASTRADO COM SUCESSO")
 
 
             })
@@ -41,7 +42,7 @@ const LeadsForm: StorefrontFunctionComponent<LeadsFormProps> = ({ }) => {
             });
         }
         else{
-          console.log("OBRIGADO. VOCÊ JÁ ESTÁ CADASTRADO!")
+          alert("DESCULPE. ESTE EMAIL JÁ ESTÁ CADASTRADO!")
         }
 
       });

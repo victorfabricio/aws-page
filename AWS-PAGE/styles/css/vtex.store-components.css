@@ -5,6 +5,7 @@
 .searchBarContainer {
   width: 528px;
   position: relative;
+  margin-right: 90px;
 }
 
 .infoCardContainer {
@@ -12,7 +13,9 @@
   width: 100%;
 
 }
-
+.infoCardContainer--slid {
+  height: 350px;
+}
 .infoCardCallActionContainer--slid :global(.vtex-button) { 
   text-transform: initial;
 }
@@ -111,4 +114,7 @@
 
 .sellingPrice {
   color: black;
+}
+.infoCardCallActionText--text {
+  margin-bottom: 30px;
 }
