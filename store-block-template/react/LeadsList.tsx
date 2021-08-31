@@ -10,7 +10,7 @@ const LeadsList: StorefrontFunctionComponent<LeadsListProps> = ({ }) => {
   let rand = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 1);
 
   useEffect(() => {
-    axios.get(`https://victorpereira--hiringcoders202111.myvtex.com/_v/leads`,{
+    axios.get(`https://joirdev--hiringcoders202111.myvtex.com/_v/leads`,{
       headers:{
         'Cache-Control': 'no-cache, no-store, must-revalidate'
       }
