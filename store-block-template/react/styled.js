@@ -34,3 +34,41 @@ export const FormButton = styled.button `
 	color: #FFFFFF;
 	border-radius: 10px;
 `
+export const Lista = styled.div`
+	width: 80%;
+	margin: 0 auto;
+	`
+
+export const Tabela = styled.table`
+	margin: 0 auto;
+	border: 1px solid #000000;
+	border-collapse: collapse;
+	`
+
+export const TabelaTitulo = styled.h1`
+	text-align: center;
+	margin: 30px auto;
+`
+
+export const TabelaCabecalho = styled.thead`
+	border: 1px solid #000000;
+`
+
+export const TabelaLinha = styled.tr`
+	height: 30px;
+`
+
+export const TabelaCorpo = styled.tbody`
+	border: 1px solid #000000;
+	`
+	
+	export const TabelaCelulasCabecalho = styled.th`
+	width: 300px;
+	border: 1px solid #000000;
+	`
+	
+	export const TabelaCelulasCorpo = styled.td`
+	width: 300px;
+	text-align: center;
+	border: 1px solid #000000;
+`

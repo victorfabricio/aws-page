@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import { useCssHandles } from 'vtex.css-handles'
+import * as S from './styled'
 
 interface LeadsListProps { }
 const CSS_HANDLES = ['tabela']
@@ -25,50 +26,32 @@ const LeadsList: StorefrontFunctionComponent<LeadsListProps> = ({ }) => {
   const handles = useCssHandles(CSS_HANDLES)
   console.log("TESTE3= ", repositories)
   return (
-    <div>
-      <br />
-      <br />
+    <S.Lista>
       <ol>
-      <h1></h1>
-          <table className={`${handles.tabela} tl dt--fixed`}>
-          <thead>
-            <tr>
-              <th>NOME</th>
-              <th></th>
-              <th>TELEFONE</th>
-              <th></th>
-              <th>EMAIL</th>
-              <th></th>
-              <th>CATEGORIA</th>
-            </tr>
-          </thead>
-          {repositories.map(repository =>{
-         return(
-          <tbody>
-            
-            <tr>
-            <li>
-              <td>{repository.name}</td>
-              </li>
-              <td></td>
-              
-              <td>{repository.phone}</td>
-              
-              <td></td>
-              
-              <td>{repository.email}</td>
-              <td></td>
-              <td>{repository.category}</td>
-            </tr>
-
-          </tbody>
-           )
-          })
-          }
-        </table>
+        <S.TabelaTitulo>USUÁRIOS</S.TabelaTitulo>
+        <S.Tabela>
+          <S.TabelaCabecalho>
+            <S.TabelaLinha>
+              <S.TabelaCelulasCabecalho>NOME</S.TabelaCelulasCabecalho>
+              <S.TabelaCelulasCabecalho>TELEFONE</S.TabelaCelulasCabecalho>
+              <S.TabelaCelulasCabecalho>EMAIL</S.TabelaCelulasCabecalho>
+              <S.TabelaCelulasCabecalho>CATEGORIA</S.TabelaCelulasCabecalho>
+            </S.TabelaLinha>
+          </S.TabelaCabecalho>
+        {repositories.map(repository =>{
+        return(
+          <S.TabelaCorpo>
+            <S.TabelaLinha>
+              <S.TabelaCelulasCorpo>{repository.name}</S.TabelaCelulasCorpo>
+              <S.TabelaCelulasCorpo>{repository.phone}</S.TabelaCelulasCorpo>
+              <S.TabelaCelulasCorpo>{repository.email}</S.TabelaCelulasCorpo>
+              <S.TabelaCelulasCorpo>{repository.category}</S.TabelaCelulasCorpo>
+            </S.TabelaLinha>
+          </S.TabelaCorpo>
+        )
+        </S.Tabela>
       </ol>
-    </div>
-    
+    </S.Lista>
   )
 }
 
