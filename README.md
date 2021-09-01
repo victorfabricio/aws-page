@@ -1,7 +1,7 @@
 # Hiring Coders - Desafio Final - AWS
 Projeto de Desenvolvimento Web realizado pelo Grupo 11 como entrega do Desafio Final do Hiring Coders 2021, programa educacional estruturado pela Gama Academy e pela VTEX com apoio da AWS, ACCT, we.digi, Corebiz, Whirlpool e Loja Integrada.
 
-[![Watch the video]https://github.com/victorfabricio/aws-page/blob/main/AWS-PAGE/assets/home.png](https://github.com/victorfabricio/aws-page/blob/main/AWS-PAGE/assets/Projeto_Vtex-AWS.mp4)
+[![Watch the video](https://github.com/victorfabricio/aws-page/blob/main/AWS-PAGE/assets/home.png)](https://github.com/victorfabricio/aws-page/blob/main/AWS-PAGE/assets/Projeto_Vtex-AWS.mp4)
 ​
 ## Sumário
 - [Introdução](#introdução)
