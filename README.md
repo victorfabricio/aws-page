@@ -2,6 +2,9 @@
 Projeto de Desenvolvimento Web realizado pelo Grupo 11 como entrega do Desafio Final do Hiring Coders 2021, programa educacional estruturado pela Gama Academy e pela VTEX com apoio da AWS, ACCT, we.digi, Corebiz, Whirlpool e Loja Integrada.
 
 [![Watch the video](https://github.com/victorfabricio/aws-page/blob/main/AWS-PAGE/assets/home.png)](https://youtu.be/c4cF8eS0tVc)
+
+
+<video src='https://youtu.be/c4cF8eS0tVc' width=180/>
 ​
 ## Sumário
 - [Introdução](#introdução)
