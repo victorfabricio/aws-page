@@ -4,7 +4,7 @@ Projeto de Desenvolvimento Web realizado pelo Grupo 11 como entrega do Desafio F
 [![Watch the video](https://github.com/victorfabricio/aws-page/blob/main/AWS-PAGE/assets/home.png)](https://youtu.be/c4cF8eS0tVc)
 
 
-<video src='https://youtu.be/c4cF8eS0tVc' width=180/>
+<video src='https://youtu.be/c4cF8eS0tVc'/>
 
 ​
 ## Sumário
