@@ -4,9 +4,9 @@ Projeto de Desenvolvimento Web realizado pelo Grupo 11 como entrega do Desafio F
 [![Watch the video](https://github.com/victorfabricio/aws-page/blob/main/AWS-PAGE/assets/home.png)](https://youtu.be/c4cF8eS0tVc)
 
 
-https://user-images.githubusercontent.com/
+https://user-images.githubusercontent.com/victorfabricio/aws-pag/AWS-PAGE/assets/Projeto_Vtex-AWS.mp4
 
-https://raw.githubusercontent.com/victorfabricio/aws-page/blob/main/AWS-PAGE/assets/Projeto_Vtex-AWS.mp4
+https://raw.githubusercontent.com/victorfabricio/aws-pag/AWS-PAGE/assets/Projeto_Vtex-AWS.mp4
 
 ​
 ## Sumário
